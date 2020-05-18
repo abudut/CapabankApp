@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start"><ion-back-button [defaultHref]="['/home']"></ion-back-button></ion-buttons>
+    <ion-title>Lista de usuarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+
+  <table>
+  <thead>
+  <th>Usuario</th>
+  <th>Ver Datos</th>
+  <th>Accion</th>
+  </thead>
+    <tbody>
+    <tr *ngFor="let us of user">
+      <td>{{ us.username }}</td>
+      <td> <ion-button color="medium" size="small" href="veruser">Ver</ion-button></td>
+      <td> <ion-button color="warning" size="small" href="edituser">Editar</ion-button> | <ion-button color="danger" size="small">Eliminar</ion-button></td>
+    
+      </tr>
+  
+    </tbody>
+  </table>
+
+       <section>
+        <header></header>
+        <ion-button expand="block" href="adduser">Añadir usuario</ion-button>
+      </section>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar padding>
+  </ion-toolbar>
+</ion-footer>
+
+
+

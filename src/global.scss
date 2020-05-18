@@ -24,3 +24,16 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* OKTA CSS */
+@import "@okta/okta-signin-widget/dist/css/okta-sign-in.min.css";
+
+ion-header ion-toolbar{
+    --background:#0e3060;
+    --color: white;
+}
+
+ion-footer ion-toolbar{
+    --background:#0e3060;
+    --color: white;
+}

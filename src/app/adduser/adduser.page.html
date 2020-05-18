@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start"><ion-back-button [defaultHref]="['/home']"></ion-back-button></ion-buttons>
+    <ion-title>Añadir usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form >
+        <ion-item lines="full">
+          <ion-label position="stacked">Usuario <span>*</span></ion-label>
+          <ion-input name="usuario"  required></ion-input>
+        </ion-item>
+    
+        <ion-item lines="full">
+          <ion-label position="stacked">Nombre <span>*</span></ion-label>
+          <ion-input name="nombre" required></ion-input>
+        </ion-item>
+    
+        <ion-item lines="full">
+          <ion-label position="stacked">Apellidos </ion-label>
+          <ion-input name="apellido" ></ion-input>
+        </ion-item>
+    
+        <ion-item lines="full">
+          <ion-label position="stacked">Email<span class="ar">*</span></ion-label>
+          <ion-input name="email" required></ion-input>
+        </ion-item>
+    
+        <ion-item lines="full">
+          <ion-label position="stacked">Telefono <span class="ar">*</span></ion-label>
+          <ion-input name="telefono"  required></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Grupo</ion-label>
+          <ion-select >
+            <ion-select-option value="1">Administrador</ion-select-option>
+            <ion-select-option value="2">Professional</ion-select-option>
+            <ion-select-option value="3">Cliente</ion-select-option>
+          </ion-select>
+        </ion-item>
+       <section>
+        <header></header>
+        <ion-button expand="block" href="adduser">Añadir usuario</ion-button>
+      </section>
+    </form>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar padding>
+  </ion-toolbar>
+</ion-footer>

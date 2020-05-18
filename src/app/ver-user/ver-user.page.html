@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start"><ion-back-button [defaultHref]="['/user']"></ion-back-button></ion-buttons>
+    <ion-title>Ver usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card *ngFor="let us of user">
+  <ion-list>
+   <ion-item lines="full"><p><b>Id: </b> {{us.id}}</p></ion-item>
+    <ion-item lines="full"><p><b>Usuario: </b> {{us.username}}</p></ion-item>
+       <ion-item lines="full"><p><b>Nombre: </b> {{us.name}}</p></ion-item>
+       <ion-item lines="full"><p><b>Apellidos: </b> {{us.surname}}</p></ion-item>
+         <ion-item lines="full"><p><b>Email: </b> {{us.email}}</p></ion-item>
+           <ion-item lines="full"><p><b>Telefono: </b> {{us.phone}}</p></ion-item>
+  </ion-list>
+</ion-card>
+</ion-content>
+
+
