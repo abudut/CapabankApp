@@ -10,7 +10,6 @@ import { User } from '../models/user';
 export class EdituserPage implements OnInit {
 
    user: User[] = [];
-  private User= this.user;
   constructor(private userService: UserService) { }
 
   ngOnInit() {

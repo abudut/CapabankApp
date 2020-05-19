@@ -5,32 +5,32 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content *ngFor="let us of user">
 
     <form >
         <ion-item lines="full">
           <ion-label position="stacked">Usuario <span>*</span></ion-label>
-          <ion-input name="usuario" [ngModel]='user.email'  required></ion-input>
+          <ion-input name="usuario" [ngModel]='us.username'  required></ion-input>
         </ion-item>
     
         <ion-item lines="full">
           <ion-label position="stacked">Nombre <span>*</span></ion-label>
-          <ion-input name="nombre" required></ion-input>
+          <ion-input name="nombre" [ngModel]='us.first_name' required></ion-input>
         </ion-item>
     
         <ion-item lines="full">
           <ion-label position="stacked">Apellidos </ion-label>
-          <ion-input name="apellido" ></ion-input>
+          <ion-input name="apellido" [ngModel]='us.last_name' ></ion-input>
         </ion-item>
     
         <ion-item lines="full">
           <ion-label position="stacked">Email<span class="ar">*</span></ion-label>
-          <ion-input name="email" required></ion-input>
+          <ion-input name="email" [ngModel]='us.email' required></ion-input>
         </ion-item>
     
         <ion-item lines="full">
           <ion-label position="stacked">Telefono <span class="ar">*</span></ion-label>
-          <ion-input name="telefono"  required></ion-input>
+          <ion-input name="telefono" [ngModel]='us.phone'  required></ion-input>
         </ion-item>
     
         <ion-item>

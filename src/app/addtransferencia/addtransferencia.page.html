@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start"><ion-back-button [defaultHref]="['/transferencia']"></ion-back-button></ion-buttons>
+    <ion-title>Realizar Transferencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-subtitle>Transferencias</ion-card-subtitle>
+      <ion-card-title>Datos de la transferencia</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+    
+      <ion-item>
+        <ion-label>Cuenta Destinatario:</ion-label>
+        <ion-input type="text"  name="title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Concepto:</ion-label>
+        <ion-input type="text"  name="title"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Beneficiario:</ion-label>
+        <ion-input type="text"  name="title"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Importe:</ion-label> 
+        <ion-input type="text"  name="title"></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <ion-button expand="block" href="addtransferencia">Enviar</ion-button>
+  </ion-card>
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar padding>
+  </ion-toolbar>
+</ion-footer>

@@ -48,6 +48,10 @@ const routes: Routes = [
     path: 'transferencia',
     loadChildren: () => import('./transferencia/transferencia.module').then( m => m.TransferenciaPageModule)
   },
+  {
+    path: 'addtransferencia',
+    loadChildren: () => import('./addtransferencia/addtransferencia.module').then( m => m.AddtransferenciaPageModule)
+  },
 
 ];
 

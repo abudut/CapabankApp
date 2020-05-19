@@ -1,12 +1,21 @@
 <ion-header>
   <ion-toolbar>
    <ion-buttons slot="start"><ion-back-button [defaultHref]="['/home']"></ion-back-button></ion-buttons>
-    <ion-title>Realizar transferencias</ion-title>
+    <ion-title>Transferencias</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content fullscreen>
+  <ion-card>
 
+    <ion-card-header>
+      <ion-card-subtitle>Transferencias</ion-card-subtitle>
+      <ion-card-title>Nuevas transferencias</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button href="addtransferencia">Realizar transferencia</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 
 <ion-footer>
