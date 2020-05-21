@@ -11,9 +11,10 @@
       <ion-card-subtitle>Mi Cuenta</ion-card-subtitle>
       <ion-card-title>Total</ion-card-title>
     </ion-card-header>
-    <ion-card-content *ngFor="let cu of cuenta">
+    <ion-card-content >
+      <div *ngFor="let cu of cuenta">
       <h1 class="ion-text-center">{{ cu.sou }} €</h1>
-     
+    </div>   
     </ion-card-content>
   </ion-card>
 </ion-content>
